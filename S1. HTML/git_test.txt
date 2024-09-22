@@ -1,5 +1,3 @@
 testing git
 
 writing new codes for testing git
-
-new test for git function
