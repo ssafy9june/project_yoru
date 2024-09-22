@@ -1,8 +1,1 @@
-testing for git
-
-
-see if git does save all the things
-
-
-
-this is learning git. git test
+deleted
