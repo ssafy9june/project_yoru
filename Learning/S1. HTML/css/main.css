@@ -36,3 +36,108 @@ p {
     font-size: 10px;
     box-shadow: gray 30px 20px;
 }
+
+.container {
+    width: 800px;
+    margin: 0px auto;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.left-menu {
+    width: 20%;
+    height: 400px;
+    background-color: cornflowerblue;
+    /* float: left; */
+    display: inline-block;
+    vertical-align: top;
+}
+
+.right-menu{
+    width: 70%;
+    height: 400px;
+    background-color: coral;
+    /* float: right; */
+    display: inline-block;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+    /* clear: both; */
+}
+
+.profile-section {
+    width: 100%;
+    background-color: skyblue;
+    height: 100px;
+    /* float: left; */
+}
+
+.content{
+    width: 100%;
+    background-color: brown;
+    height: 200px;
+    /* float: left; */
+}
+
+.image-section {
+    width: 30%;
+    background-color:darkgreen;
+    height: 300px;
+    float: right;
+    /* clear: left; */
+}
+
+.wrap {
+    float: left;
+    width: 70%;
+    height: 300px;
+}
+
+.profile-section {
+    display: flex;
+}
+
+.navbar {
+    /* width: 70%; */
+    /* margin: 0px auto; */
+}
+
+.navbar li{
+    display: inline-block;
+    /* width: 70%;
+    margin: auto 0px; */
+    width: 60px;
+    text-align: center;
+
+}
+
+.navbar a{
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.main-background {
+    width: 100%;
+    height: 500px;
+    background-image: url(../Moonlight-AlbumCover.webp), url(ElmaCover.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    /* filter: brightness(30%) saturate(90%) */
+    padding: 1px;
+
+}
+
+.main-title {
+    color: white;
+    font-size: 40px;
+    margin-top: 10px;
+}
