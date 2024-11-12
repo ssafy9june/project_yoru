@@ -11,7 +11,7 @@ import java.util.Date;
 public class Announcement {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Long id;
+    public Integer id;
 
     public String title;
     public Date created_date;
