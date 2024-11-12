@@ -30,4 +30,6 @@ public class BasicController {
     String date(){
         return LocalDateTime.now().toString();
     }
+
+
 }
