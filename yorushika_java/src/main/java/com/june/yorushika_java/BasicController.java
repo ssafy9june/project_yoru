@@ -27,9 +27,8 @@ public class BasicController {
 
     @GetMapping("/date")
     @ResponseBody
-    String date(){
+    String date() {
         return LocalDateTime.now().toString();
     }
-
 
 }

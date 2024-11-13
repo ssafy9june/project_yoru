@@ -10,7 +10,5 @@ public class YorushikaJavaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(YorushikaJavaApplication.class, args);
-
-		System.out.println(LocalDateTime.now());
 	}
 }
