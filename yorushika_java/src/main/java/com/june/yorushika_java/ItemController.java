@@ -20,6 +20,7 @@ public class ItemController {
         System.out.println(result.get(1).title);
         var a = new Item();
         System.out.println(a.toString());
+        System.out.println(a.title);
 
         model.addAttribute("items", result);
         return "list.html";
