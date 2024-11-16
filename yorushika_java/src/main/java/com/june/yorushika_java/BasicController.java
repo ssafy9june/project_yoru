@@ -31,4 +31,9 @@ public class BasicController {
         return LocalDateTime.now().toString();
     }
 
+    @GetMapping("/error")
+    String error() {
+        return "error.html";
+    }
+
 }
