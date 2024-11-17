@@ -1,4 +1,4 @@
-package com.june.yorushika_java;
+package com.june.yorushika_java.item;
 
 import jakarta.persistence.*;
 import lombok.Getter;

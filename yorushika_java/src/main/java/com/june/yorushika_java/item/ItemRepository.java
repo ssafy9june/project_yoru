@@ -1,4 +1,4 @@
-package com.june.yorushika_java;
+package com.june.yorushika_java.item;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

@@ -16,6 +16,12 @@
             <h2 th:text="${i.title}">title</h2>
             <a th:href="@{/detail/{id}(id=${i.id})}">상세보기</a>
             <p th:text="${i.price}">price</p>
+            <button th:onclick="fetch('/item?id=[[${i.id}]]', { method : 'DELETE' })
+                .then(r => r.text())
+                .then(() => {
+                    location.reload();
+                })
+                ">삭제</button>
         </div>
     </div>
 </body>
