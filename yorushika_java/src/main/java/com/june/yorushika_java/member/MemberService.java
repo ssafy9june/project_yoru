@@ -3,6 +3,7 @@ package com.june.yorushika_java.member;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -13,13 +14,14 @@ import java.util.Map;
 public class MemberService {
     
     private final MemberRepository memberRepository;
+    private final PasswordEncoder passwordEncoder;
 
     public void saveMember(Map<String, String> formData) throws Exception {
         Member targetMember = new Member();
 
         targetMember.setUsername(formData.get("username"));
         if (formData.get("password").length() > 7) {
-            targetMember.setPassword(new BCryptPasswordEncoder().encode(formData.get("password")));
+            targetMember.setPassword(passwordEncoder.encode(formData.get("password")));
         }
         targetMember.setDisplayName(formData.get("displayName"));
         if (!formData.get("age").isEmpty()) {

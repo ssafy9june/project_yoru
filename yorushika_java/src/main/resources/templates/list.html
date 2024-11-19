@@ -16,6 +16,7 @@
             <h2 th:text="${i.title}">title</h2>
             <a th:href="@{/detail/{id}(id=${i.id})}">상세보기</a>
             <p th:text="${i.price}">price</p>
+            <p th:text="${i.writer}">writer</p>
             <button th:onclick="fetch('/item?id=[[${i.id}]]', { method : 'DELETE' })
                 .then(r => r.text())
                 .then(() => {

@@ -2,4 +2,9 @@
     <a class="logo">SpringMall</a>
     <a href="/list">List</a>
     <a href="/write">Write</a>
+    <a href="/signup">Signup</a>
+    <a sec:authorize="isAuthenticated()" href="/logout">Logout</a>
+    <a sec:authorize="isAnonymous()" href="/login">Login</a>
+<!--    <h4 sec:authentication="principal.username">님이 접속 중</h4>-->
+    <h4 sec:authorize="isAuthenticated()" th:text="'안녕하세요, ' + ${#authentication.name} + '님이 접속 중입니다.'"></h4>
 </div>

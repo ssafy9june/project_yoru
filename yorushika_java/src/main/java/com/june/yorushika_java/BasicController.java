@@ -20,10 +20,10 @@ public class BasicController {
         return "I am Java SuperRookie June";
     }
 
-    @GetMapping("/mypage")
-    String mypage() {
-        return "index.html";
-    }
+//    @GetMapping("/mypage")
+//    String mypage() {
+//        return "index.html";
+//    }
 
     @GetMapping("/date")
     @ResponseBody

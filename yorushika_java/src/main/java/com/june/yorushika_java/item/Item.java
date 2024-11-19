@@ -18,7 +18,12 @@ public class Item {
     private String title;
     private Integer price;
 
+    private String writer;
+
     public boolean isValid() {
-        return StringUtils.hasText(this.title) && this.price != null && this.price > 0;
+        return StringUtils.hasText(this.title) &&
+                this.price != null &&
+                this.price > 0 &&
+                StringUtils.hasText(this.writer);
     }
 }
